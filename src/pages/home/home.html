@@ -1,0 +1,15 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Home</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-list>
+    <ion-item *ngFor="let feed of feeds">
+      <div class="animate-in-secondary">
+        {{ feed.title }}
+      </div>
+    </ion-item>
+  </ion-list>
+</ion-content>

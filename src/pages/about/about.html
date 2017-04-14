@@ -1,0 +1,18 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      About
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-card *ngIf="feed">
+    <ion-card-header>
+      {{ feed.title }}
+    </ion-card-header>
+    <ion-card-content>
+      {{ feed.description }}
+    </ion-card-content>
+  </ion-card>
+</ion-content>
